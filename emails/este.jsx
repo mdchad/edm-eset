@@ -112,6 +112,9 @@ export function EmailTemplate() {
         </Container>
 
 
+
+            
+
       </Tailwind>
     </Html>
   );
