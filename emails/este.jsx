@@ -45,15 +45,17 @@ export function EmailTemplate() {
           />
         </Head>
 
-        <Container className='bg-white'>
+        <Container>
           <Section style={box} className="p-4">
             <Img
               src={`${baseUrl}/static/Footer_Logo.png`}
               alt="logo"
             />
           </Section>
+        </Container>
 
-          <Section className="bg-white p-3">
+        <Container className='bg-white hidden sm:block'>
+          <Section className="p-3">
             <Column className="p-5 sm:w-2/2 w-1/2">
               <Img
                 // src={`../static/P2_S1_Main.png`}
@@ -72,9 +74,8 @@ export function EmailTemplate() {
           </Section>
         </Container>
 
-
-        <Container style={container}>
-          <Section className="p-5 w-full sm:w-1/2">
+        <Container className='bg-white sm:hidden'>
+          <Section className="p-5">
             <Img
               // src={`../static/P2_S1_Main.png`}
               src={`${baseUrl}/static/P2_S1_Main.png`}
@@ -84,11 +85,30 @@ export function EmailTemplate() {
             />
           </Section>
 
-          <Section className="p-5 w-full sm:w-1/2">
+          <Section className="p-5">
             <h1>Get your password game strong</h1>
             <p>Keeping your passwords secure is imperative because they're the first line of defense against cybercriminals. Many people struggle to keep their passwords safe, and one of the biggest mistakes is not using a strong password.</p>
             <p>Let’s learn to understand more.</p>
           </Section>
+        </Container>
+
+
+        <Container className="bg-red-500 sm:bg-green-500">
+          <Column className="p-5 sm:inline-block">
+            <Img
+              // src={`../static/P2_S1_Main.png`}
+              src={`${baseUrl}/static/P2_S1_Main.png`}
+              width={200}
+              height={160}
+              alt="codepen"
+            />
+          </Column>
+
+          <Column className="p-5 sm:inline-block">
+            <h1>Get your password game strong</h1>
+            <p>Keeping your passwords secure is imperative because they're the first line of defense against cybercriminals. Many people struggle to keep their passwords safe, and one of the biggest mistakes is not using a strong password.</p>
+            <p>Let’s learn to understand more.</p>
+          </Column>
         </Container>
 
 
@@ -100,7 +120,6 @@ export function EmailTemplate() {
 export default EmailTemplate;
 
 const container = {
-  backgroundColor: 'red',
   margin: '0 auto',
 };
 
